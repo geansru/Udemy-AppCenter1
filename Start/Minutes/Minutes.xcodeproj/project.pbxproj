@@ -17,6 +17,12 @@
 		D3AA8CFD20363C2E00222B39 /* EditEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA8CFC20363C2E00222B39 /* EditEntryViewController.swift */; };
 		D3AA8CFF2037552800222B39 /* FileEntryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA8CFE2037552800222B39 /* FileEntryStore.swift */; };
 		D5C44F5F20E0245300428EA0 /* MinutesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C44F5E20E0245300428EA0 /* MinutesTests.swift */; };
+		D5C44F6D20E02A9D00428EA0 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C44F6720E02A9C00428EA0 /* AppCenter.framework */; };
+		D5C44F6E20E02A9D00428EA0 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C44F6820E02A9C00428EA0 /* AppCenterCrashes.framework */; };
+		D5C44F6F20E02A9D00428EA0 /* AppCenterPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C44F6920E02A9D00428EA0 /* AppCenterPush.framework */; };
+		D5C44F7020E02A9D00428EA0 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C44F6A20E02A9D00428EA0 /* AppCenterAnalytics.framework */; };
+		D5C44F7120E02A9D00428EA0 /* AppCenterDistributeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5C44F6B20E02A9D00428EA0 /* AppCenterDistributeResources.bundle */; };
+		D5C44F7220E02A9D00428EA0 /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C44F6C20E02A9D00428EA0 /* AppCenterDistribute.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		D5C44F5C20E0245300428EA0 /* MinutesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinutesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C44F5E20E0245300428EA0 /* MinutesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesTests.swift; sourceTree = "<group>"; };
 		D5C44F6020E0245300428EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C44F6720E02A9C00428EA0 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
+		D5C44F6820E02A9C00428EA0 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
+		D5C44F6920E02A9D00428EA0 /* AppCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterPush.framework; sourceTree = "<group>"; };
+		D5C44F6A20E02A9D00428EA0 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
+		D5C44F6B20E02A9D00428EA0 /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppCenterDistributeResources.bundle; sourceTree = "<group>"; };
+		D5C44F6C20E02A9D00428EA0 /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterDistribute.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +65,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C44F7220E02A9D00428EA0 /* AppCenterDistribute.framework in Frameworks */,
 				7DD70B1E96AC5605428D9E1D /* Pods_Minutes.framework in Frameworks */,
+				D5C44F6F20E02A9D00428EA0 /* AppCenterPush.framework in Frameworks */,
+				D5C44F6D20E02A9D00428EA0 /* AppCenter.framework in Frameworks */,
+				D5C44F6E20E02A9D00428EA0 /* AppCenterCrashes.framework in Frameworks */,
+				D5C44F7020E02A9D00428EA0 /* AppCenterAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,7 @@
 		D3048F1B202E2B2D00D45D7E = {
 			isa = PBXGroup;
 			children = (
+				D5C44F6620E02A3E00428EA0 /* AppCenter */,
 				D3048F26202E2B2D00D45D7E /* Minutes */,
 				D5C44F5D20E0245300428EA0 /* MinutesTests */,
 				D3048F25202E2B2D00D45D7E /* Products */,
@@ -118,6 +136,19 @@
 				D5C44F6020E0245300428EA0 /* Info.plist */,
 			);
 			path = MinutesTests;
+			sourceTree = "<group>";
+		};
+		D5C44F6620E02A3E00428EA0 /* AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				D5C44F6720E02A9C00428EA0 /* AppCenter.framework */,
+				D5C44F6A20E02A9D00428EA0 /* AppCenterAnalytics.framework */,
+				D5C44F6820E02A9C00428EA0 /* AppCenterCrashes.framework */,
+				D5C44F6C20E02A9D00428EA0 /* AppCenterDistribute.framework */,
+				D5C44F6B20E02A9D00428EA0 /* AppCenterDistributeResources.bundle */,
+				D5C44F6920E02A9D00428EA0 /* AppCenterPush.framework */,
+			);
+			path = AppCenter;
 			sourceTree = "<group>";
 		};
 		F5FB8005AB8AA227268BC5FB /* Pods */ = {
@@ -216,6 +247,7 @@
 				D3048F32202E2B2D00D45D7E /* LaunchScreen.storyboard in Resources */,
 				D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */,
 				D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */,
+				D5C44F7120E02A9D00428EA0 /* AppCenterDistributeResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +446,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppCenter",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
@@ -430,6 +466,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppCenter",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;

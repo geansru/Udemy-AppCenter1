@@ -16,7 +16,18 @@
 		D3048F40202E540100D45D7E /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3048F3F202E540100D45D7E /* EntriesTableViewController.swift */; };
 		D3AA8CFD20363C2E00222B39 /* EditEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA8CFC20363C2E00222B39 /* EditEntryViewController.swift */; };
 		D3AA8CFF2037552800222B39 /* FileEntryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA8CFE2037552800222B39 /* FileEntryStore.swift */; };
+		D5C44F5F20E0245300428EA0 /* MinutesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C44F5E20E0245300428EA0 /* MinutesTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5C44F6120E0245300428EA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3048F1C202E2B2D00D45D7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3048F23202E2B2D00D45D7E;
+			remoteInfo = Minutes;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		352FB7A4ECEF397DF861302D /* Pods-Minutes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minutes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Minutes/Pods-Minutes.release.xcconfig"; sourceTree = "<group>"; };
@@ -32,6 +43,9 @@
 		D3048F3F202E540100D45D7E /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
 		D3AA8CFC20363C2E00222B39 /* EditEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntryViewController.swift; sourceTree = "<group>"; };
 		D3AA8CFE2037552800222B39 /* FileEntryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEntryStore.swift; sourceTree = "<group>"; };
+		D5C44F5C20E0245300428EA0 /* MinutesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinutesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C44F5E20E0245300428EA0 /* MinutesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesTests.swift; sourceTree = "<group>"; };
+		D5C44F6020E0245300428EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DD70B1E96AC5605428D9E1D /* Pods_Minutes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C44F5920E0245300428EA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D3048F26202E2B2D00D45D7E /* Minutes */,
+				D5C44F5D20E0245300428EA0 /* MinutesTests */,
 				D3048F25202E2B2D00D45D7E /* Products */,
 				F5FB8005AB8AA227268BC5FB /* Pods */,
 				545A707B6C18821D6DD57357 /* Frameworks */,
@@ -68,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				D3048F24202E2B2D00D45D7E /* Minutes.app */,
+				D5C44F5C20E0245300428EA0 /* MinutesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +109,15 @@
 				D3AA8CFE2037552800222B39 /* FileEntryStore.swift */,
 			);
 			path = Minutes;
+			sourceTree = "<group>";
+		};
+		D5C44F5D20E0245300428EA0 /* MinutesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5C44F5E20E0245300428EA0 /* MinutesTests.swift */,
+				D5C44F6020E0245300428EA0 /* Info.plist */,
+			);
+			path = MinutesTests;
 			sourceTree = "<group>";
 		};
 		F5FB8005AB8AA227268BC5FB /* Pods */ = {
@@ -118,6 +150,24 @@
 			productReference = D3048F24202E2B2D00D45D7E /* Minutes.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D5C44F5B20E0245300428EA0 /* MinutesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C44F6520E0245300428EA0 /* Build configuration list for PBXNativeTarget "MinutesTests" */;
+			buildPhases = (
+				D5C44F5820E0245300428EA0 /* Sources */,
+				D5C44F5920E0245300428EA0 /* Frameworks */,
+				D5C44F5A20E0245300428EA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5C44F6220E0245300428EA0 /* PBXTargetDependency */,
+			);
+			name = MinutesTests;
+			productName = MinutesTests;
+			productReference = D5C44F5C20E0245300428EA0 /* MinutesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,6 +181,11 @@
 					D3048F23202E2B2D00D45D7E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					D5C44F5B20E0245300428EA0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D3048F23202E2B2D00D45D7E;
 					};
 				};
 			};
@@ -148,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				D3048F23202E2B2D00D45D7E /* Minutes */,
+				D5C44F5B20E0245300428EA0 /* MinutesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +216,13 @@
 				D3048F32202E2B2D00D45D7E /* LaunchScreen.storyboard in Resources */,
 				D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */,
 				D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C44F5A20E0245300428EA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +262,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5C44F5820E0245300428EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C44F5F20E0245300428EA0 /* MinutesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5C44F6220E0245300428EA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3048F23202E2B2D00D45D7E /* Minutes */;
+			targetProxy = D5C44F6120E0245300428EA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D3048F2B202E2B2D00D45D7E /* Main.storyboard */ = {
@@ -360,6 +439,38 @@
 			};
 			name = Release;
 		};
+		D5C44F6320E0245300428EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XN2L2WJ4Q;
+				INFOPLIST_FILE = MinutesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.geans.MinutesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minutes.app/Minutes";
+			};
+			name = Debug;
+		};
+		D5C44F6420E0245300428EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XN2L2WJ4Q;
+				INFOPLIST_FILE = MinutesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.geans.MinutesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minutes.app/Minutes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -377,6 +488,15 @@
 			buildConfigurations = (
 				D3048F37202E2B2D00D45D7E /* Debug */,
 				D3048F38202E2B2D00D45D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5C44F6520E0245300428EA0 /* Build configuration list for PBXNativeTarget "MinutesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C44F6320E0245300428EA0 /* Debug */,
+				D5C44F6420E0245300428EA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
